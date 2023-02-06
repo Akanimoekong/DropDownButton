@@ -1,3 +1,4 @@
+import 'package:callingclasses/screens/listview.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/myhome.dart';
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Color(0xFFD39E24),
+        // scaffoldBackgroundColor: Color(0xFFD39E24),
+        scaffoldBackgroundColor: Color(0xFFFFFFFF),
         appBarTheme: AppBarTheme(color: Color(0xFF654321)),
         textTheme: TextTheme(
           bodyText2: TextStyle(fontStyle: FontStyle.italic),
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
           bodyText2: TextStyle(color: Colors.grey.shade50, fontSize: 20),
         ),
       ),*/
-      home: MyHomePage(),
+      home: OurListView(),
     );
   }
 }
